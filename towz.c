@@ -86,7 +86,7 @@ char **strtow2(char *str, char d)
 		if (!p[y])
 		{
 			for (a = 0; a < y; a++)
-				free(c[a]);
+				free(p[a]);
 			free(p);
 			return (NULL);
 		}
