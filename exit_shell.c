@@ -2,11 +2,11 @@
 
 /**
  **_strncpy - functions that copies a string
- *@desti:  destination string to copy
- *@srce: source string
- *@m:  no  of characters to be copied
+ *@desti:  destination of the string to copy
+ *@srce: source string to be copied
+ *@m: number of characters to be copied
  *
- *Return:  concat string
+ *Return: the copied string
  */
 char *_strncpy(char *desti, char *srce, int m)
 {
@@ -62,9 +62,9 @@ char *_strncat(char *dest, char *src, int m)
 /**
  **_strchr - function that locates a character in a string
  *@str: the string  parsed
- *@d: character
-
- *Return: (str)  ptr to  memory area
+ *@d: character to be located
+ *
+ *Return:string pointer to memory area
  */
 char *_strchr(char *str, char d)
 {

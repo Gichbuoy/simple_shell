@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * add_node - function that adds a node to the start of the linked list
+ * add_node - function that adds a node at the beginning of the linked list
  * @head: address of pointer to head node
  * @str: str field of node
  * @num: node index used by history
@@ -39,7 +39,7 @@ list_t *add_node(list_t **head, const char *str, int num)
  * @str: str field of node
  * @num: node index used by history
  *
- * Return: size of list
+ * Return: size of linked list
  */
 list_t *add_node_end(list_t **head, const char *str, int num)
 {
