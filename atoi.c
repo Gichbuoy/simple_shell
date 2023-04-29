@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
- * interactive - function that prints true if shell is in interactive mode
+ * interactive - function that checks if shell is in interactive mode or not
  * @info: the struct address containing arguments
  *
- * Return: 1 if interactive mode,
- * 0 if opposite
+ * Return: 1 if shell is in interactive mode,
+ *	0 if shell is not interactive
  */
 int interactive(info_t *info)
 {
@@ -13,11 +13,14 @@ int interactive(info_t *info)
 }
 
 /**
- * is_delim - function that checks if a character is a delimeter
- * @c:  char to checked
- * @delim:  delimeter string
- * Return: 1 if true, 0 if opposite
+ * is_delim - function that checks if char is a delimeter
+ * @c:  character to check
+ * @delim:  this is the delimeter string
+ *
+ * Return: 1 if @c is a delim,
+ *	0 if @c is not a delim
  */
+
 int is_delim(char c, char *delim)
 {
 	while (*delim)
@@ -27,9 +30,11 @@ int is_delim(char c, char *delim)
 }
 
 /**
- *_isalpha - function that looks for alphabetic character
- *@c: character to input
- *Return: 1 if d is alphabetic, 0 opposite
+ *_isalpha - function that looks for alphabetic characters in shell
+ *@c: character to look for
+ *
+ *Return: 1 if @c is alphabetic,
+ *	0 if @c is not alphabetic
  */
 
 int _isalpha(int c)
@@ -41,9 +46,10 @@ int _isalpha(int c)
 }
 
 /**
- *_atoi - function tht converts  string to  integer
+ *_atoi - this is a function that converts a string to an int
  *@z: string to be converted
- *Return: 0 if no is still string, converted number otherwise
+ *Return: 0 if no is still string,
+ *othewise return the converted number
  */
 
 int _atoi(char *z)

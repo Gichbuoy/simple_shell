@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * _myenv - function that prints the current environment
+ * _myenv - function that prints the current shell environment
  * @info: Structure that has potential arguments.
  *
  * Return: Always 0
@@ -13,11 +13,11 @@ int _myenv(info_t *info)
 }
 
 /**
- * _getenv - function that gets the value of an environ variable
+ * _getenv - function that gets the value of an environment variable
  * @info: Structure tht has possible arguments
  * @nm: environent variable name
  *
- * Return: value
+ * Return: env variable value
  */
 char *_getenv(info_t *info, const char *nm)
 {

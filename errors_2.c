@@ -51,11 +51,11 @@ void print_error(info_t *info, char *est)
 }
 
 /**
- * print_d - function tht  prints  decimal number of base 10
+ * print_d - function that  prints  decimal number of base 10
  * @inp: input value
- * @fd: filedescriptor to write or modify
+ * @fd: file-descriptor to write or modify
  *
- * Return: no of char printed
+ * Return: number of chars printed
  */
 int print_d(int inp, int fd)
 {
@@ -90,12 +90,12 @@ int print_d(int inp, int fd)
 }
 
 /**
- * convert_number - function that converts  a number
+ * convert_number - function that converts a number from a string
  * @nm: the number to convert
  * @base:  the base
  * @flag: the argument flags
  *
- * Return: the string
+ * Return: the converted string
  */
 char *convert_number(long int nm, int base, int flag)
 {

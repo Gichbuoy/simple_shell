@@ -1,8 +1,9 @@
 #include "shell.h"
 
 /**
- * _myhistory - functions displays history list in shell
- * @inf: Structure containing potential arguments.
+ * _myhistory - functions displays the history list in shell
+ * @inf: shell structure containing potential arguments.
+ *
  *  Return: Always 0
  */
 int _myhistory(info_t *inf)
@@ -12,11 +13,12 @@ int _myhistory(info_t *inf)
 }
 
 /**
- * unset_alias - function tht sets alias to string
- * @info: it is a parameter struct containing arguments
+ * unset_alias - function that unsets alias to string
+ * @info: this is a parameter struct containing arguments
  * @str: is the string alias to chekck
  *
- * Return: Always 0 on success, 1 upon error
+ * Return: Always 0 on success,
+ *	1 on error
  */
 int unset_alias(info_t *info, char *str)
 {
@@ -36,10 +38,11 @@ int unset_alias(info_t *info, char *str)
 
 /**
  * set_alias - function that sets alias to string
- * @info: is the parameter struct
- * @str1: is the string alias
+ * @info: this is the parameter struct having arguments
+ * @str1: this is the string alias to set
  *
- * Return: Always 0 on success, 1 upon  error
+ * Return: Always 0 on success,
+ * 1 on error
  */
 int set_alias(info_t *info, char *str1)
 {
@@ -56,10 +59,11 @@ int set_alias(info_t *info, char *str1)
 }
 
 /**
- * print_alias - function that  prints an alias string
+ * print_alias - function that prints an alias string
  * @node1: is the alias node
  *
- * Return: Always 0 on success, 1 upon error
+ * Return: Always 0 on success,
+ *	1 on error
  */
 int print_alias(list_t *node1)
 {
@@ -80,8 +84,9 @@ int print_alias(list_t *node1)
 
 /**
  * _myalias - function that copies the alias in builtin
- * @info: Structure tht has potential arguments.maintains
- *          constant function prototype.
+ * @info: Structure tht has potential arguments, and
+ * constant function prototype.
+ *
  *  Return: Always 0
  */
 int _myalias(info_t *info)
